@@ -6,15 +6,25 @@
 
 <title>Test</title>
 
+<script>
+function debug(log) {
+  document.getElementById("debug_window").innerHTML += log+"<br>";
+}  
+</script>
+
 <script src="js/jquery.js"></script>
 <script src="js/base64.js"></script>
 <script src="js/db.js"></script>
-<script src="js/websqldump.js"></script>
 
 </head>
 <body>
 
-aqui
+  <div id="content">
+    <a href="javascript:db.backup();">Backup</a>
+  </div>
+
+  <div id="debug_window"></div>
+
 
 </body>
 </html>
